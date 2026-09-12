@@ -1,0 +1,23 @@
+# source & config
+src/
+tsconfig.json
+.github/
+.gitignore
+
+# tests
+**/*.test.ts
+**/*.test.js
+**/*.spec.ts
+**/*.spec.js
+
+# docs (keep README.md / LICENSE)
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+CHANGELOG.md
+
+# dev files
+.vscode/
+.idea/
+coverage/
+*.tgz
+*.log
