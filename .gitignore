@@ -32,3 +32,6 @@ Thumbs.db
 *.tgz
 .cache/
 .temp/
+
+# debug
+debug.ts
