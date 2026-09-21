@@ -6,17 +6,17 @@
 
 **English** · [简体中文](#简体中文)
 
-[![npm version](https://img.shields.io/npm/v/physics-units?color=blue)](https://www.npmjs.com/package/physics-units)
-[![CI](https://github.com/yourname/physics-units/actions/workflows/ci.yml/badge.svg)](https://github.com/yourname/physics-units/actions/workflows/ci.yml)
-[![license](https://img.shields.io/npm/l/physics-units)](./LICENSE)
-[![types](https://img.shields.io/npm/types/physics-units)](https://www.npmjs.com/package/physics-units)
-[![bundle size](https://img.shields.io/bundlephobia/minzip/physics-units)](https://bundlephobia.com/package/physics-units)
+[![npm version](https://img.shields.io/npm/v/sciquantity?color=blue)](https://www.npmjs.com/package/sciquantity)
+[![CI](https://github.com/HugoYoungHekun/sciquantity/actions/workflows/ci.yml/badge.svg)](https://github.com/HugoYoungHekun/sciquantity/actions/workflows/ci.yml)
+[![license](https://img.shields.io/npm/l/sciquantity)](./LICENSE)
+[![types](https://img.shields.io/npm/types/sciquantity)](https://www.npmjs.com/package/sciquantity)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/sciquantity)](https://bundlephobia.com/package/sciquantity)
 
 ---
 
 # English
 
-`physics-units` handles scientific data with **dimension-safe arithmetic**, **arbitrary custom units**, **SI prefixes**, and — uniquely — **declarative multi-language unit expressions**.
+`sciquantity` handles scientific data with **dimension-safe arithmetic**, **arbitrary custom units**, **SI prefixes**, and — uniquely — **declarative multi-language unit expressions**.
 
 Instead of hard-coding `"km/h"` or `"千米每小时"` into your data model, you register a plain-data _language pack_. Physical structure and human language stay completely decoupled.
 
@@ -34,7 +34,7 @@ Instead of hard-coding `"km/h"` or `"千米每小时"` into your data model, you
 ## Installation
 
 ```bash
-npm install physics-units
+npm install sciquantity
 ```
 
 Requires Node.js 18+ (for `Intl.NumberFormat`, top-level `await`, `node --test`).
@@ -48,7 +48,7 @@ import {
   parseQuantity,
   EN,
   ZH_CN,
-} from "physics-units";
+} from "sciquantity";
 
 // 1. Set up units and languages
 const units = createDefaultRegistry();
@@ -112,7 +112,7 @@ force.in(units.parse("N", zh));
 ### Scientific notation
 
 ```ts
-import { Quantity } from "physics-units";
+import { Quantity } from "sciquantity";
 
 const avogadro = new Quantity(6.022e23, units.parse("mol^-1", zh));
 avogadro.format({
@@ -270,8 +270,8 @@ See the source for the full API.
 ## Development
 
 ```bash
-git clone https://github.com/yourname/physics-units.git
-cd physics-units
+git clone https://github.com/HugoYoungHekun/sciquantity.git
+cd sciquantity
 npm install
 npm run build
 npm test
@@ -289,13 +289,13 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
 
 ## License
 
-[MIT](./LICENSE) © physics-units contributors
+[MIT](./LICENSE) © sciquantity contributors
 
 ---
 
 # 简体中文
 
-`physics-units` 用于处理科学数据，具备**量纲安全的运算**、**任意自定义单位**、**SI 词头**，以及本库独有的**声明式多语言单位表达**。
+`sciquantity` 用于处理科学数据，具备**量纲安全的运算**、**任意自定义单位**、**SI 词头**，以及本库独有的**声明式多语言单位表达**。
 
 不必把 `"km/h"` 或 `"千米每小时"` 硬编码进数据模型——你只需注册一份纯数据的*语言包*，物理结构与人类语言从此彻底解耦。
 
@@ -313,7 +313,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
 ## 安装
 
 ```bash
-npm install physics-units
+npm install sciquantity
 ```
 
 需要 Node.js 18+（用到 `Intl.NumberFormat`、顶层 `await`、`node --test`）。
@@ -327,7 +327,7 @@ import {
   parseQuantity,
   EN,
   ZH_CN,
-} from "physics-units";
+} from "sciquantity";
 
 // 1. 建立单位与语言系统
 const units = createDefaultRegistry();
@@ -391,7 +391,7 @@ force.in(units.parse("N", zh));
 ### 科学计数法
 
 ```ts
-import { Quantity } from "physics-units";
+import { Quantity } from "sciquantity";
 
 const avogadro = new Quantity(6.022e23, units.parse("mol^-1", zh));
 avogadro.format({
@@ -549,8 +549,8 @@ class Quantity {
 ## 开发
 
 ```bash
-git clone https://github.com/yourname/physics-units.git
-cd physics-units
+git clone https://github.com/HugoYoungHekun/sciquantity.git
+cd sciquantity
 npm install
 npm run build
 npm test
