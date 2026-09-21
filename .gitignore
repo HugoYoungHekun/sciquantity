@@ -35,3 +35,5 @@ Thumbs.db
 
 # debug
 debug.ts
+debug.js
+tsconfig.debug.json

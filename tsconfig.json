@@ -1,6 +1,6 @@
 {
   "name": "sciquantity",
-  "version": "0.1.0",
+  "compilerOptions": {},
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

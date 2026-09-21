@@ -1,6 +1,7 @@
 # source & config
 src/
 tsconfig.json
+tsconfig.debug.json
 .github/
 .gitignore
 
@@ -9,6 +10,9 @@ tsconfig.json
 **/*.test.js
 **/*.spec.ts
 **/*.spec.js
+debug.ts
+debug.js
+
 
 # docs (keep README.md / LICENSE)
 CONTRIBUTING.md
