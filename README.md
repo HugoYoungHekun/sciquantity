@@ -7,7 +7,6 @@
 **English** · [简体中文](#简体中文)
 
 [![npm version](https://img.shields.io/npm/v/sciquantity?color=blue)](https://www.npmjs.com/package/sciquantity)
-[![CI](https://github.com/HugoYoungHekun/sciquantity/actions/workflows/ci.yml/badge.svg)](https://github.com/HugoYoungHekun/sciquantity/actions/workflows/ci.yml)
 [![license](https://img.shields.io/npm/l/sciquantity)](./LICENSE)
 [![types](https://img.shields.io/npm/types/sciquantity)](https://www.npmjs.com/package/sciquantity)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/sciquantity)](https://bundlephobia.com/package/sciquantity)
